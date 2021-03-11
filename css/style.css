@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.body__top,
+.body__bottom{
+    position: absolute;
+    width: 300px;
+}
+.body__top{
+    left: -100px;
+    top: -120px;
+}
+
+.body__bottom{
+    right: -30px;
+    bottom: 80px;
+}
+
+.card{
+    background-color: #fff;
+    width: 300px;
+    height: 330px;
+    margin: 100px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    position: relative;
+    z-index: 10;
+}
+
+.card__header{
+    background-image: url(../assets/img/bg-pattern-card.svg);
+    height: 100px;
+    position: relative;
+}
+
+.card__image{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%); /*centrar de esta manera ayuda que sin importar el tamaño del header siempre la imagen se quedara en su lugar */
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.card__body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    line-height: 1.5;
+    /* background-color: red; */
+}
+
+.card__text{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__text--light{
+    font-weight: 300;
+    color: gray;
+    font-size: 14px;
+    padding-left: 5px;
+}
+.card__footer{
+    height: 90px;
+    margin-top: 30px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card__number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.card__text--size{
+    font-size: 12px;
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
